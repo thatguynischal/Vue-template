@@ -1,5 +1,5 @@
-const DASHBOARD_URL = "/dashboard";
+const DASHBOARD_URL = "/facts";
 const LOGIN_URL = "/api/user/login";
 
 
-export default {DASHBOARD_URL, LOGIN_URL};
+export default { DASHBOARD_URL, LOGIN_URL };
