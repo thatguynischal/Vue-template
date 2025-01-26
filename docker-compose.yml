@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vue-template
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/app/src  # For development hot-reload
+    environment:
+      - NODE_ENV=development
+      - VITE_API_URL=http://localhost:8080  # Adjust this based on your API URL
+    networks:
+      - vue-network
+
+networks:
+  vue-network:
+    driver: bridge
