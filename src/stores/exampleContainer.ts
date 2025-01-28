@@ -1,7 +1,7 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
-export const useToggleContainer = defineStore("toggleContainer", {
+export const useToggleContainer = defineStore('toggleContainer', {
   state: () => {
-    return { userStatus: false };
-  },
-});
+    return { userStatus: false }
+  }
+})

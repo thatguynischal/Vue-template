@@ -1,5 +1,28 @@
 # Vue 3 Template with TypeScript
 
+## Table of Contents
+
+- [📋 Prerequisites](#-prerequisites)
+- [🛠️ Installation](#-installation)
+    - [Local Development](#local-development)
+- [📦 Packaging and Deployment](#-packaging-and-deployment)
+    - [Docker](#docker)
+    - [Nginx Configuration](#nginx-configuration)
+- [📚 Documentation](#-documentation)
+    - [Getting Started](#getting-started)
+    - [Component Structure](#component-structure)
+    - [Routing and Navigation](#routing-and-navigation)
+    - [State Management](#state-management)
+    - [API Integration](#api-integration)
+    - [Testing and Debugging](#testing-and-debugging)
+- [🔧 Available Scripts](#-available-scripts)
+    - [npm run dev](#npm-run-dev)
+    - [npm run build](#npm-run-build)
+    - [npm run preview](#npm-run-preview)
+- [🚢 Deployment](#-deployment)
+    - [Using Docker (Recommended)](#using-docker-recommended)
+    - [Manual Deployment](#manual-deployment)
+
 A modern Vue 3 template built with TypeScript, Vite, and best practices for enterprise-level applications. This template provides a solid foundation for building scalable and maintainable Vue applications.
 
 ## 🚀 Features
@@ -25,12 +48,14 @@ A modern Vue 3 template built with TypeScript, Vite, and best practices for ente
 ### Local Development
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd vue-template
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -38,6 +63,7 @@ yarn install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 # or
@@ -47,6 +73,7 @@ yarn dev
 ### Docker Development
 
 1. Build and run using Docker Compose:
+
 ```bash
 docker compose up -d
 ```
@@ -54,6 +81,7 @@ docker compose up -d
 The application will be available at `http://localhost:8080`.
 
 Additional Docker commands:
+
 - `docker compose logs -f` - Follow the logs
 - `docker compose restart` - Restart the services
 - `docker compose ps` - Check container status
@@ -87,11 +115,13 @@ vue-template/
 ### Using Docker (Recommended)
 
 1. Build the Docker image:
+
 ```bash
 docker build -t vue-template .
 ```
 
 2. Run the container:
+
 ```bash
 docker run -p 8080:80 vue-template
 ```
@@ -99,6 +129,7 @@ docker run -p 8080:80 vue-template
 ### Manual Deployment
 
 1. Build the application:
+
 ```bash
 npm run build
 ```
